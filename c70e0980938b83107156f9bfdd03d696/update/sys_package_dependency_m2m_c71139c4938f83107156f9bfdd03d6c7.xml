@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">d521b6f78c5103100a22deb6dd2b4e5d</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 00:34:51</sys_created_on>
+        <sys_id>c71139c4938f83107156f9bfdd03d6c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 00:34:51</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

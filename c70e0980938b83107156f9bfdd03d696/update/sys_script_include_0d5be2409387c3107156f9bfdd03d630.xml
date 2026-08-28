@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_2210852_odee_s_0.OD_Map</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Handles mapping functions for statuses and date/times</description>
+        <mobile_callable>false</mobile_callable>
+        <name>OD_Map</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var OD_Map = Class.create();
+OD_Map.prototype = {
+    initialize: function() {
+    },
+	/* OpenData statusId -> ServiceNow incident state, for u_od_state.
+     * Many-to-one and deliberately banded: a future OpenData release adding
+     * a new hold or closure reason lands in the right bucket automatically. */
+    statusIdToState: function (statusId) {
+        var s = parseInt(statusId, 10);
+        if (isNaN(s))     return null;
+        if (s === 1)      return 1;   // New
+        if (s === 120)    return 6;   // Solved pending confirmation -> Resolved
+        if (s === 1003)   return 8;   // Errant entry -> Canceled
+        if (s >= 1000)    return 7;   // 1000, 1001, 1002, 1004 -> Closed
+        if (s >= 900)     return 3;   // 900-905 -> On Hold
+        return 2;                 // 100, 110, 200-204 -> In Progress
+    },
+
+    /* ServiceNow incident state -> canonical OpenData statusId.
+     * LOSSY INVERSE. Only call this when the state actually changed —
+     * see the trap in section 11. */
+    stateToCanonicalStatusId: function (state, closeCode) {
+        switch (parseInt(state, 10)) {
+            case 1:  return 1;
+            case 2:  return 100;
+            case 3:  return 900;
+            case 6:  return 120;
+            case 7:  return this._closeCodeToStatusId(closeCode);
+            case 8:  return 1003;
+            default: return null;
+        }
+    },
+
+    /* Never returns 1000 — OpenData rejects the bare CLOSED status on write. */
+    _closeCodeToStatusId: function (closeCode) {
+        var c = String(closeCode || '').toLowerCase();
+        if (c.indexOf('not solved') >= 0 || c.indexOf('not resolved') >= 0) return 1002;
+        return 1001;
+    },
+
+    urgencyToLevelId: function (urgency) {
+        switch (parseInt(urgency, 10)) {
+            case 1:  return 30;   // High
+            case 2:  return 20;   // Medium
+            case 3:  return 10;   // Low
+            default: return null;
+        }
+    },
+
+    isTerminal: function (statusId) {
+        return parseInt(statusId, 10) >= 1000;
+    },
+
+    /* GlideDateTime -> yyyy-MM-ddTHH:mm:ss+00:00, the DTZ form OpenData parses.
+     * getValue() is already UTC, so the offset is always +00:00. Emitting an
+     * explicit offset matters: the offsetless form is reinterpreted in the
+     * OpenData server's own timezone. */
+    toDTZ: function (gdt) {
+        if (!gdt || gdt.nil()) return null;
+        return new GlideDateTime(gdt.toString()).getValue().replace(' ', 'T') + '+00:00';
+    },
+
+    type: 'OD_Map'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 04:49:55</sys_created_on>
+        <sys_id>0d5be2409387c3107156f9bfdd03d630</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>OD_Map</sys_name>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name>sys_script_include_0d5be2409387c3107156f9bfdd03d630</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:03:52</sys_updated_on>
+    </sys_script_include>
+</record_update>

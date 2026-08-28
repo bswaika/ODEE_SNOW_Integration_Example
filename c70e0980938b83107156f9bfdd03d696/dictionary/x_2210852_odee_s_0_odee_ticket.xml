@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="071139c4938f83107156f9bfdd03d676" extends="task" label="ODEE Ticket" max_length="40" name="x_2210852_odee_s_0_odee_ticket" type="collection">
+        <element choice="3" default="outbound" label="Direction" max_length="255" name="u_direction" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="OUTBOUND" sequence="1" value="outbound"/>
+                <element inactive_on_update="false" label="INBOUND" sequence="0" value="inbound"/>
+            </choice>
+        </element>
+        <element label="External Ticket Id" max_length="64" name="u_external_ticket_id" type="string"/>
+        <element label="Attempts" max_length="40" name="u_attempts" type="integer"/>
+        <element label="OD Urgency Id" max_length="40" name="u_od_urgency_id" type="integer"/>
+        <element label="OD Assignee" max_length="100" name="u_od_assignee" type="string"/>
+        <element label="Last Error" max_length="4000" name="u_last_error" type="string"/>
+        <element label="Last Attempt" max_length="40" name="u_last_attempt" type="glide_date_time"/>
+        <element label="OD Status Id" max_length="40" name="u_od_status_id" type="integer"/>
+        <element label="OD Modified" max_length="255" name="u_od_modified" type="glide_date_time"/>
+        <element label="Incident" max_length="32" name="u_incident" reference="incident" type="reference"/>
+        <element choice="3" default="1" label="Sync State" max_length="255" name="u_sync_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Update Pending" sequence="1" value="update_pending"/>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Synced" sequence="2" value="synced"/>
+                <element inactive_on_update="false" label="Failed" sequence="3" value="failed"/>
+                <element inactive_on_update="false" label="Conflict" sequence="4" value="conflict"/>
+                <element inactive_on_update="false" label="Abandoned" sequence="5" value="abandoned"/>
+            </choice>
+        </element>
+        <element choice="3" default="new" label="OD State" max_length="255" name="u_od_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Canceled" sequence="5" value="canceled"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="On Hold" sequence="2" value="on_hold"/>
+                <element inactive_on_update="false" label="Resolved" sequence="3" value="resolved"/>
+                <element inactive_on_update="false" label="Closed" sequence="4" value="closed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in_progress"/>
+            </choice>
+        </element>
+    </element>
+</database>
