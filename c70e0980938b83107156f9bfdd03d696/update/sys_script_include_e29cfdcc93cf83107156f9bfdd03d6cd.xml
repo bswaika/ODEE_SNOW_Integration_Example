@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_2210852_odee_s_0.OD_Auth</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Handles getting token from server for REST API</description>
+        <mobile_callable>false</mobile_callable>
+        <name>OD_Auth</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var OD_Auth = Class.create();
+OD_Auth.prototype = {
+    initialize: function () {
+        // Replace x_scope with your PDI's generated scope
+        this.ALIAS     = '375a39c893cf83107156f9bfdd03d68f';
+        this.P_TOKEN   = 'x_2210852_odee_s_0.token';
+        this.P_EXPIRES = 'x_2210852_odee_s_0.token_expires_ms';
+        this.P_TTL_MIN = 'x_2210852_odee_s_0.token_ttl_minutes';
+    },
+
+    getBaseUrl: function () {
+        var u = gs.getProperty('x_2210852_odee_s_0.OD_Base_URL', '');
+		if (!u) throw 'Property x_2210852_odee_s_0.OD_Base_URL is not set.';
+		return String(u).replace(/\/+$/, '');
+    },
+
+    getToken: function () {
+        var now    = new GlideDateTime().getNumericValue();
+        var expiry = parseInt(gs.getProperty(this.P_EXPIRES, '0'), 10);
+        var cached = gs.getProperty(this.P_TOKEN, '');
+
+        if (cached && expiry > now + 60000) return cached;   // 60s safety margin
+        return this._mint();
+    },
+
+    _mint: function () {
+        var ci   = new sn_cc.ConnectionInfoProvider().getConnectionInfo(this.ALIAS);
+        var user = ci.getCredentialAttribute('user_name');
+        var pass = ci.getCredentialAttribute('password');
+
+        var r = new sn_ws.RESTMessageV2();
+        r.setEndpoint(this.getBaseUrl() + '/auth');
+        r.setHttpMethod('POST');
+        r.setRequestHeader('Content-Type', 'application/json');
+        r.setRequestHeader('Accept',       'application/json');
+        r.setHttpTimeout(20000);
+        r.setRequestBody(JSON.stringify({ username: user, password: pass }));
+
+        var res  = r.execute();
+        var code = res.getStatusCode();
+
+        // Redirects are followed, so an auth/allowlist failure arrives as 401.
+        if (code == 401 || code == 302)
+            throw 'OpenData /auth rejected: bad credentials, missing API_ACCESS group, '
+                + 'or caller IP not allowlisted. HTTP ' + code + ' ' + res.getBody();
+        if (code != 200)
+            throw 'OpenData /auth failed: HTTP ' + code + ' ' + res.getBody();
+
+        var token = JSON.parse(res.getBody()).token;
+        if (!token) throw 'OpenData /auth returned no token.';
+
+        var ttlMs = parseInt(gs.getProperty(this.P_TTL_MIN, '30'), 10) * 60000;
+        gs.setProperty(this.P_TOKEN,   token);
+        gs.setProperty(this.P_EXPIRES, String(new GlideDateTime().getNumericValue() + ttlMs));
+        return token;
+    },
+
+    call: function (method, path, body, isRetry) {
+        isRetry = (isRetry === true);
+
+        var r = new sn_ws.RESTMessageV2();
+        r.setEndpoint(this.getBaseUrl() + path);
+        r.setHttpMethod(method);
+        r.setRequestHeader('Authorization', 'Bearer ' + this.getToken());
+        r.setRequestHeader('Accept', 'application/json');
+        r.setHttpTimeout(30000);
+        if (body) {
+            r.setRequestHeader('Content-Type', 'application/json');
+            r.setRequestBody(JSON.stringify(body));
+        }
+
+        var res  = r.execute();
+        var code = res.getStatusCode();
+
+        // Token died mid-flight. Re-mint once, then give up.
+        if ((code == 401 || code == 302) && !isRetry) {
+            gs.setProperty(this.P_EXPIRES, '0');
+            return this.call(method, path, body, true);
+        }
+        if (code != 200)
+            throw 'OpenData ' + method + ' ' + path + ' failed: HTTP ' + code + ' ' + res.getBody();
+
+        return JSON.parse(res.getBody());
+    },
+
+    type: 'OD_Auth'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 01:32:44</sys_created_on>
+        <sys_id>e29cfdcc93cf83107156f9bfdd03d6cd</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>OD_Auth</sys_name>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name>sys_script_include_e29cfdcc93cf83107156f9bfdd03d6cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 06:14:47</sys_updated_on>
+    </sys_script_include>
+</record_update>

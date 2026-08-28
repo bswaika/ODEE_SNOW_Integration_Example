@@ -1,0 +1,2403 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Calls ODEE for POST or PUT</description>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>odee_call_action</internal_name>
+        <label_cache>[{"name":"{{action.odee_ticket}}","label":"action➛ODEE Ticket","type":"action","ref":"","reference_display":"ODEE Ticket","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.odee_ticket.sys_id}}","label":"action➛ODEE Ticket➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"x_2210852_odee_s_0_odee_ticket","column_name":"sys_id","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>419ec958938b07107156f9bfdd03d698</master_snapshot>
+        <master_snapshot_digest/>
+        <name>ODEE Call Action</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:16:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>17269e4493c3c3107156f9bfdd03d6c0</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>ODEE Call Action</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_17269e4493c3c3107156f9bfdd03d6c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 20:49:25</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=17269e4493c3c3107156f9bfdd03d6c0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=17269e4493c3c3107156f9bfdd03d6c0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>17269e4493c3c3107156f9bfdd03d6c0</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:17:24</sys_created_on>
+        <sys_id>54569e8493c3c3107156f9bfdd03d645</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:17:24</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">c8569e8493c3c3107156f9bfdd03d628</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>17269e4493c3c3107156f9bfdd03d6c0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:17:24</sys_created_on>
+        <sys_id>98569e8493c3c3107156f9bfdd03d645</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:17:24</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">8c569e8493c3c3107156f9bfdd03d61f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_17269e4493c3c3107156f9bfdd03d6c0^id=17269e4493c3c3107156f9bfdd03d6c0"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=17269e4493c3c3107156f9bfdd03d6c0^sys_idNOT IN9c579e0893c3c3107156f9bfdd03d64c"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="ODEE Call Action">17269e4493c3c3107156f9bfdd03d6c0</action>
+        <cid>a4cca27e-006b-4c42-b303-1daaa881da4c</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:21:47</sys_created_on>
+        <sys_id>9c579e0893c3c3107156f9bfdd03d64c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 20:49:02</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9c579e0893c3c3107156f9bfdd03d64c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9c579e0893c3c3107156f9bfdd03d64c</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:21:47</sys_created_on>
+        <sys_id>20579e0893c3c3107156f9bfdd03d67a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 20:49:02</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    var ESCROW    = 'x_2210852_odee_s_0_odee_ticket';&#13;
+    var CLIENT_ID = 'SERVICENOW';&#13;
+&#13;
+    var PENDING = 'pending', UPDATE_PENDING = 'update_pending', SYNCED = 'synced', FAILED = 'failed';&#13;
+&#13;
+    var map = new OD_Map();&#13;
+    var api = new OD_Auth();&#13;
+&#13;
+    var g = new GlideRecord(ESCROW);&#13;
+    if (!g.get(inputs.escrow_sys_id)) {&#13;
+        outputs.status  = 'ERROR';&#13;
+        outputs.message = 'Escrow record not found: ' + inputs.escrow_sys_id;&#13;
+        return;&#13;
+    }&#13;
+&#13;
+    var inc      = g.u_incident.getRefRecord();&#13;
+    var isCreate = (g.u_sync_state == PENDING);&#13;
+    var isUpdate = (g.u_sync_state == UPDATE_PENDING);&#13;
+&#13;
+    if(!(isCreate || isUpdate)) return;&#13;
+    &#13;
+    try {&#13;
+        var payload = isCreate ? buildPost() : buildPut();&#13;
+        outputs.debugpayload = JSON.stringify(payload);&#13;
+        var res     = api.call(isCreate ? 'POST' : 'PUT', '/ticket', [payload]);&#13;
+        outputs.debugresponse = JSON.stringify(res);&#13;
+        var entry   = (res &amp;&amp; res.data &amp;&amp; res.data[0]) ? res.data[0] : null;&#13;
+        if (!entry) throw 'OpenData returned no data element.';&#13;
+&#13;
+        var info   = entry.statusInfo || {};&#13;
+        var status = info.status || 'ERROR';&#13;
+        outputs.status  = status;&#13;
+        outputs.message = info.message || '';&#13;
+&#13;
+        // HTTP was 200 either way. The per-record verdict lives here.&#13;
+        if (status === 'ERROR') { markFailed(info.message || 'Unknown error.'); return; }&#13;
+&#13;
+        // WARNING means "duplicate, not inserted" — OpenData already holds it,&#13;
+        // but echoes back a null internalTicketId, so recover it with a GET.&#13;
+        var id = entry.internalTicketId;&#13;
+        if (!id &amp;&amp; status === 'WARNING') id = recoverId(g.u_external_ticket_id.toString());&#13;
+&#13;
+        markSynced(entry, id);&#13;
+&#13;
+    } catch (e) {&#13;
+        outputs.status  = 'ERROR';&#13;
+        outputs.message = String(e);&#13;
+        markFailed(String(e));&#13;
+    }&#13;
+&#13;
+    // ---------------------------------------------------------------&#13;
+&#13;
+    function buildPost() {&#13;
+        var subject = g.short_description.toString() || 'ServiceNow incident ' + g.u_external_ticket_id;&#13;
+        var body    = g.description.toString() || subject;&#13;
+&#13;
+        return {&#13;
+            externalTicketId : g.u_external_ticket_id.toString(),&#13;
+            clientId         : CLIENT_ID,&#13;
+            clientName       : 'ServiceNow ITSM',&#13;
+            typeId           : 1,                                    // Helpdesk&#13;
+            urgencyLevelId   : 20,&#13;
+            subject          : subject.substr(0, 255),                  // hard cap in OpenData&#13;
+            description      : body.substr(0, 19000),                 // body caps at 20000&#13;
+            originationDate  : map.toDTZ(inc.opened_at) || map.toDTZ(new GlideDateTime()),&#13;
+            dueDate          : map.toDTZ(inc.due_date),&#13;
+            location         : scrub(inc.location.getDisplayValue()).substr(0, 255),&#13;
+            contactName      : inc.caller_id.getDisplayValue(),&#13;
+            category         : inc.category.toString(),&#13;
+            workDescription  : 'Created from ServiceNow incident ' + g.u_external_ticket_id + '.'&#13;
+        };&#13;
+    }&#13;
+&#13;
+    function buildPut() {&#13;
+        var p = { externalTicketId: g.u_external_ticket_id.toString() };&#13;
+&#13;
+        // Status ONLY when the incident genuinely differs from the mirror.&#13;
+        // Sending it unconditionally would flatten 110 or 903 back to 100/900.&#13;
+        var incState = parseInt(inc.state, 10);&#13;
+        var mirrored = parseInt(g.u_od_state, 10);&#13;
+        if (!isNaN(incState) &amp;&amp; incState !== mirrored) {&#13;
+            var sid = map.stateToCanonicalStatusId(incState, inc.close_code.toString());&#13;
+            if (sid) p.statusId = sid;                      // never 1000; see OpenDataMap&#13;
+        }&#13;
+&#13;
+        // Omitted fields keep OpenData's current values — that is the whole&#13;
+        // point of the merge semantics. Do not pad this object out.&#13;
+        return p;&#13;
+    }&#13;
+&#13;
+    function recoverId(externalId) {&#13;
+        try {&#13;
+            var r = api.call('GET', '/ticket?externalTicketId=' + encodeURIComponent(externalId), null);&#13;
+            return (r &amp;&amp; r.data &amp;&amp; r.data[0]) ? r.data[0].internalTicketId : null;&#13;
+        } catch (e) { return null; }&#13;
+    }&#13;
+&#13;
+    function markSynced(entry, id) {&#13;
+        const status_map_snow_odee = {&#13;
+            1: 'new',&#13;
+            2: 'in_progress',&#13;
+            3: 'on_hold',&#13;
+            6: 'resolved',&#13;
+            7: 'closed',&#13;
+            8: 'canceled'&#13;
+        };&#13;
+&#13;
+        const status_map_odee_snow = {&#13;
+            'new': 1,&#13;
+            'in_progress': 2,&#13;
+            'on_hold': 3,&#13;
+            'resolved': 6,&#13;
+            'closed': 7,&#13;
+            'canceled': 8&#13;
+        };&#13;
+        if (id) {&#13;
+            g.correlation_id      = String(id);&#13;
+            g.correlation_display = 'Modius OpenData';&#13;
+        }&#13;
+        // Snapshot from the RESPONSE, never from what we sent: PUT echoes back&#13;
+        // the ticket's current values even for fields we omitted.&#13;
+        if (entry.statusId != null) {&#13;
+            g.u_od_status_id = entry.statusId;&#13;
+            g.u_od_state     = status_map_snow_odee[map.statusIdToState(entry.statusId)];&#13;
+        }&#13;
+        if (entry.urgencyLevelId != null) g.u_od_urgency_id = entry.urgencyLevelId;&#13;
+&#13;
+        // A POST always lands as New (1). If ServiceNow is already further&#13;
+        // along, queue the corrective PUT rather than declaring victory.&#13;
+        var needsCorrection = isCreate&#13;
+            &amp;&amp; !isNaN(parseInt(inc.state, 10))&#13;
+            &amp;&amp; parseInt(inc.state, 10) !== map.statusIdToState(entry.statusId);&#13;
+&#13;
+        g.u_sync_state   = needsCorrection ? UPDATE_PENDING : SYNCED;&#13;
+        g.u_direction    = 'outbound';&#13;
+        g.u_last_error   = '';&#13;
+        g.u_attempts     = 0;&#13;
+        g.u_last_attempt = new GlideDateTime();&#13;
+        g.active         = !(g.u_sync_state == SYNCED &amp;&amp; map.isTerminal(g.u_od_status_id));&#13;
+        g.update();&#13;
+    }&#13;
+&#13;
+    function markFailed(msg) {&#13;
+        g.u_sync_state   = FAILED;&#13;
+        g.u_last_error   = String(msg).substr(0, 4000);&#13;
+        g.u_attempts     = (parseInt(g.u_attempts, 10) || 0) + 1;&#13;
+        g.u_last_attempt = new GlideDateTime();&#13;
+        g.update();&#13;
+        // u_od_* and u_od_state are left alone — they still describe OpenData.&#13;
+    }&#13;
+&#13;
+    // OpenData rejects angle brackets in the client fields and stores the&#13;
+    // rest as free text, so strip markup rather than escaping it.&#13;
+    function scrub(v) {&#13;
+        return String(v || '').replace(/[&lt;&gt;]/g, '');&#13;
+    }&#13;
+&#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9c579e0893c3c3107156f9bfdd03d64c</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:21:47</sys_created_on>
+        <sys_id>e8579e0893c3c3107156f9bfdd03d679</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:21:47</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9c579e0893c3c3107156f9bfdd03d64c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>9c579e0893c3c3107156f9bfdd03d64c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:21:47</sys_created_on>
+        <sys_id>e0579e0893c3c3107156f9bfdd03d679</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:21:47</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>escrow_sys_id</field>
+        <id>9c579e0893c3c3107156f9bfdd03d64c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:02:32</sys_created_on>
+        <sys_id>946e26c49387c3107156f9bfdd03d6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:02:32</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9c579e0893c3c3107156f9bfdd03d64c</table>
+        <value>{{action.odee_ticket.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>odee_ticket</field>
+        <id>9c579e0893c3c3107156f9bfdd03d64c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:21:47</sys_created_on>
+        <sys_id>60579e0893c3c3107156f9bfdd03d67b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:21:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9c579e0893c3c3107156f9bfdd03d64c</table>
+        <value>{{action.odee_ticket}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>9c579e0893c3c3107156f9bfdd03d64c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:21:47</sys_created_on>
+        <sys_id>28579e0893c3c3107156f9bfdd03d679</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:21:47</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_9c579e0893c3c3107156f9bfdd03d64c^id=9c579e0893c3c3107156f9bfdd03d64c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=9c579e0893c3c3107156f9bfdd03d64c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=9c579e0893c3c3107156f9bfdd03d64c"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=9c579e0893c3c3107156f9bfdd03d64c^sys_idNOT IN486e26c49387c3107156f9bfdd03d6aa"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>escrow_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">9c579e0893c3c3107156f9bfdd03d64c</model>
+        <model_id>9c579e0893c3c3107156f9bfdd03d64c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_9c579e0893c3c3107156f9bfdd03d64c</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:02:31</sys_created_on>
+        <sys_id>486e26c49387c3107156f9bfdd03d6aa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:16:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=9c579e0893c3c3107156f9bfdd03d64c^sys_idNOT IN3481328c9387c3107156f9bfdd03d666,3481328c9387c3107156f9bfdd03d66d,486e26c49387c3107156f9bfdd03d6cf,cc6e26c49387c3107156f9bfdd03d6c7"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=457399d0-1b1a-4fce-961c-0ff4398636ef</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>debugpayload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>debugPayload</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">9c579e0893c3c3107156f9bfdd03d64c</model>
+        <model_id>9c579e0893c3c3107156f9bfdd03d64c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_9c579e0893c3c3107156f9bfdd03d64c</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:16:13</sys_created_on>
+        <sys_id>3481328c9387c3107156f9bfdd03d666</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:16:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c948171c-e80a-4569-8702-7b6d345b8fb5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>debugresponse</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>debugResponse</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">9c579e0893c3c3107156f9bfdd03d64c</model>
+        <model_id>9c579e0893c3c3107156f9bfdd03d64c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_9c579e0893c3c3107156f9bfdd03d64c</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:16:14</sys_created_on>
+        <sys_id>3481328c9387c3107156f9bfdd03d66d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:16:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c7db754a-54f7-4a36-a4c4-e198d6180c31</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">9c579e0893c3c3107156f9bfdd03d64c</model>
+        <model_id>9c579e0893c3c3107156f9bfdd03d64c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_9c579e0893c3c3107156f9bfdd03d64c</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:02:31</sys_created_on>
+        <sys_id>486e26c49387c3107156f9bfdd03d6cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:02:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fb30c58c-acb1-4c58-9ac0-9d9947f3c411</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">9c579e0893c3c3107156f9bfdd03d64c</model>
+        <model_id>9c579e0893c3c3107156f9bfdd03d64c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_9c579e0893c3c3107156f9bfdd03d64c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:02:31</sys_created_on>
+        <sys_id>cc6e26c49387c3107156f9bfdd03d6c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:02:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9c579e0893c3c3107156f9bfdd03d64c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>message</element>
+        <help/>
+        <hint/>
+        <label>Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_9c579e0893c3c3107156f9bfdd03d64c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:02:31</sys_created_on>
+        <sys_id>006e26c49387c3107156f9bfdd03d6d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:02:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_9c579e0893c3c3107156f9bfdd03d64c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:02:31</sys_created_on>
+        <sys_id>046e26c49387c3107156f9bfdd03d6cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:02:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>debugresponse</element>
+        <help/>
+        <hint/>
+        <label>debugResponse</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_9c579e0893c3c3107156f9bfdd03d64c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:16:14</sys_created_on>
+        <sys_id>c981328c9387c3107156f9bfdd03d671</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:16:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>debugpayload</element>
+        <help/>
+        <hint/>
+        <label>debugPayload</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_9c579e0893c3c3107156f9bfdd03d64c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 05:16:13</sys_created_on>
+        <sys_id>fc81328c9387c3107156f9bfdd03d66a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:16:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=17269e4493c3c3107156f9bfdd03d6c0^sys_idNOT IN9219d60c93c3c3107156f9bfdd03d690"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ef1b381c-40ee-4195-b68d-59ad7e694061</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_2210852_odee_s_0_odee_ticket</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>odee_ticket</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>ODEE Ticket</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="ODEE Call Action">17269e4493c3c3107156f9bfdd03d6c0</model>
+        <model_id>17269e4493c3c3107156f9bfdd03d6c0</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_17269e4493c3c3107156f9bfdd03d6c0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="x_2210852_odee_s_0_odee_ticket">x_2210852_odee_s_0_odee_ticket</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:29:33</sys_created_on>
+        <sys_id>9219d60c93c3c3107156f9bfdd03d690</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 05:02:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9219d60c93c3c3107156f9bfdd03d690"/>
+    <sys_hub_action_output action="delete_multiple" query="model=17269e4493c3c3107156f9bfdd03d6c0^sys_idNOT IN8c569e8493c3c3107156f9bfdd03d61f,c8569e8493c3c3107156f9bfdd03d628"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=05894bd0-1a0d-47b6-892d-0534b6441aaf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="ODEE Call Action">17269e4493c3c3107156f9bfdd03d6c0</model>
+        <model_id>17269e4493c3c3107156f9bfdd03d6c0</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_17269e4493c3c3107156f9bfdd03d6c0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:17:23</sys_created_on>
+        <sys_id>8c569e8493c3c3107156f9bfdd03d61f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:17:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8c569e8493c3c3107156f9bfdd03d61f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8c569e8493c3c3107156f9bfdd03d61f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=55a201fb-ed88-4680-a7b9-cd728a0045e0,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="ODEE Call Action">17269e4493c3c3107156f9bfdd03d6c0</model>
+        <model_id>17269e4493c3c3107156f9bfdd03d6c0</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_17269e4493c3c3107156f9bfdd03d6c0</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:17:23</sys_created_on>
+        <sys_id>c8569e8493c3c3107156f9bfdd03d628</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 20:49:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c8569e8493c3c3107156f9bfdd03d628"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c8569e8493c3c3107156f9bfdd03d628"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=17269e4493c3c3107156f9bfdd03d6c0"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=17269e4493c3c3107156f9bfdd03d6c0^sys_idNOT IN9c569e8493c3c3107156f9bfdd03d647"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="ODEE Call Action">17269e4493c3c3107156f9bfdd03d6c0</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:17:24</sys_created_on>
+        <sys_id>9c569e8493c3c3107156f9bfdd03d647</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:17:24</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=9c569e8493c3c3107156f9bfdd03d647"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>odee_ticket</element>
+        <help/>
+        <hint/>
+        <label>ODEE Ticket</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_17269e4493c3c3107156f9bfdd03d6c0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:29:34</sys_created_on>
+        <sys_id>9619d60c93c3c3107156f9bfdd03d696</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:29:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_17269e4493c3c3107156f9bfdd03d6c0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_17269e4493c3c3107156f9bfdd03d6c0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:17:23</sys_created_on>
+        <sys_id>84569e8493c3c3107156f9bfdd03d626</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:17:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_17269e4493c3c3107156f9bfdd03d6c0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 03:17:23</sys_created_on>
+        <sys_id>c4569e8493c3c3107156f9bfdd03d631</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:17:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_17269e4493c3c3107156f9bfdd03d6c0"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=17269e4493c3c3107156f9bfdd03d6c0^sys_idNOT IN219e0d58938b07107156f9bfdd03d67f"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="ODEE Call Action">17269e4493c3c3107156f9bfdd03d6c0</action_id>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_hub_action_plan","id":"219e0d58938b07107156f9bfdd03d67f","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <snapshot>b617ca90938347107156f9bfdd03d684</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>219e0d58938b07107156f9bfdd03d67f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 20:49:25</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Calls ODEE for POST or PUT</description>
+        <flow_priority/>
+        <internal_name>odee_call_action</internal_name>
+        <label_cache>[{"name":"{{action.odee_ticket}}","label":"action➛ODEE Ticket","type":"action","ref":"","reference_display":"ODEE Ticket","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.odee_ticket.sys_id}}","label":"action➛ODEE Ticket➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"x_2210852_odee_s_0_odee_ticket","column_name":"sys_id","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>ODEE Call Action</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="ODEE Call Action">17269e4493c3c3107156f9bfdd03d6c0</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>419ec958938b07107156f9bfdd03d698</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:27</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=419ec958938b07107156f9bfdd03d698"/>
+    <sys_variable_value action="delete_multiple" query="document_key=419ec958938b07107156f9bfdd03d698"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>419ec958938b07107156f9bfdd03d698</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:29</sys_created_on>
+        <sys_id>2d9e0d58938b07107156f9bfdd03d674</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:29</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">d59e0d58938b07107156f9bfdd03d64d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>419ec958938b07107156f9bfdd03d698</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:29</sys_created_on>
+        <sys_id>e59e0d58938b07107156f9bfdd03d674</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:29</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">dd9e0d58938b07107156f9bfdd03d656</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_419ec958938b07107156f9bfdd03d698^id=419ec958938b07107156f9bfdd03d698"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=419ec958938b07107156f9bfdd03d698^sys_idNOT IN559ec958938b07107156f9bfdd03d6cf"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="ODEE Call Action">419ec958938b07107156f9bfdd03d698</action>
+        <cid>a4cca27e-006b-4c42-b303-1daaa881da4c</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>559ec958938b07107156f9bfdd03d6cf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 20:49:25</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=559ec958938b07107156f9bfdd03d6cf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>559ec958938b07107156f9bfdd03d6cf</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>599e0d58938b07107156f9bfdd03d646</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 20:49:25</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    var ESCROW    = 'x_2210852_odee_s_0_odee_ticket';&#13;
+    var CLIENT_ID = 'SERVICENOW';&#13;
+&#13;
+    var PENDING = 'pending', UPDATE_PENDING = 'update_pending', SYNCED = 'synced', FAILED = 'failed';&#13;
+&#13;
+    var map = new OD_Map();&#13;
+    var api = new OD_Auth();&#13;
+&#13;
+    var g = new GlideRecord(ESCROW);&#13;
+    if (!g.get(inputs.escrow_sys_id)) {&#13;
+        outputs.status  = 'ERROR';&#13;
+        outputs.message = 'Escrow record not found: ' + inputs.escrow_sys_id;&#13;
+        return;&#13;
+    }&#13;
+&#13;
+    var inc      = g.u_incident.getRefRecord();&#13;
+    var isCreate = (g.u_sync_state == PENDING);&#13;
+    var isUpdate = (g.u_sync_state == UPDATE_PENDING);&#13;
+&#13;
+    if(!(isCreate || isUpdate)) return;&#13;
+    &#13;
+    try {&#13;
+        var payload = isCreate ? buildPost() : buildPut();&#13;
+        outputs.debugpayload = JSON.stringify(payload);&#13;
+        var res     = api.call(isCreate ? 'POST' : 'PUT', '/ticket', [payload]);&#13;
+        outputs.debugresponse = JSON.stringify(res);&#13;
+        var entry   = (res &amp;&amp; res.data &amp;&amp; res.data[0]) ? res.data[0] : null;&#13;
+        if (!entry) throw 'OpenData returned no data element.';&#13;
+&#13;
+        var info   = entry.statusInfo || {};&#13;
+        var status = info.status || 'ERROR';&#13;
+        outputs.status  = status;&#13;
+        outputs.message = info.message || '';&#13;
+&#13;
+        // HTTP was 200 either way. The per-record verdict lives here.&#13;
+        if (status === 'ERROR') { markFailed(info.message || 'Unknown error.'); return; }&#13;
+&#13;
+        // WARNING means "duplicate, not inserted" — OpenData already holds it,&#13;
+        // but echoes back a null internalTicketId, so recover it with a GET.&#13;
+        var id = entry.internalTicketId;&#13;
+        if (!id &amp;&amp; status === 'WARNING') id = recoverId(g.u_external_ticket_id.toString());&#13;
+&#13;
+        markSynced(entry, id);&#13;
+&#13;
+    } catch (e) {&#13;
+        outputs.status  = 'ERROR';&#13;
+        outputs.message = String(e);&#13;
+        markFailed(String(e));&#13;
+    }&#13;
+&#13;
+    // ---------------------------------------------------------------&#13;
+&#13;
+    function buildPost() {&#13;
+        var subject = g.short_description.toString() || 'ServiceNow incident ' + g.u_external_ticket_id;&#13;
+        var body    = g.description.toString() || subject;&#13;
+&#13;
+        return {&#13;
+            externalTicketId : g.u_external_ticket_id.toString(),&#13;
+            clientId         : CLIENT_ID,&#13;
+            clientName       : 'ServiceNow ITSM',&#13;
+            typeId           : 1,                                    // Helpdesk&#13;
+            urgencyLevelId   : 20,&#13;
+            subject          : subject.substr(0, 255),                  // hard cap in OpenData&#13;
+            description      : body.substr(0, 19000),                 // body caps at 20000&#13;
+            originationDate  : map.toDTZ(inc.opened_at) || map.toDTZ(new GlideDateTime()),&#13;
+            dueDate          : map.toDTZ(inc.due_date),&#13;
+            location         : scrub(inc.location.getDisplayValue()).substr(0, 255),&#13;
+            contactName      : inc.caller_id.getDisplayValue(),&#13;
+            category         : inc.category.toString(),&#13;
+            workDescription  : 'Created from ServiceNow incident ' + g.u_external_ticket_id + '.'&#13;
+        };&#13;
+    }&#13;
+&#13;
+    function buildPut() {&#13;
+        var p = { externalTicketId: g.u_external_ticket_id.toString() };&#13;
+&#13;
+        // Status ONLY when the incident genuinely differs from the mirror.&#13;
+        // Sending it unconditionally would flatten 110 or 903 back to 100/900.&#13;
+        var incState = parseInt(inc.state, 10);&#13;
+        var mirrored = parseInt(g.u_od_state, 10);&#13;
+        if (!isNaN(incState) &amp;&amp; incState !== mirrored) {&#13;
+            var sid = map.stateToCanonicalStatusId(incState, inc.close_code.toString());&#13;
+            if (sid) p.statusId = sid;                      // never 1000; see OpenDataMap&#13;
+        }&#13;
+&#13;
+        // Omitted fields keep OpenData's current values — that is the whole&#13;
+        // point of the merge semantics. Do not pad this object out.&#13;
+        return p;&#13;
+    }&#13;
+&#13;
+    function recoverId(externalId) {&#13;
+        try {&#13;
+            var r = api.call('GET', '/ticket?externalTicketId=' + encodeURIComponent(externalId), null);&#13;
+            return (r &amp;&amp; r.data &amp;&amp; r.data[0]) ? r.data[0].internalTicketId : null;&#13;
+        } catch (e) { return null; }&#13;
+    }&#13;
+&#13;
+    function markSynced(entry, id) {&#13;
+        const status_map_snow_odee = {&#13;
+            1: 'new',&#13;
+            2: 'in_progress',&#13;
+            3: 'on_hold',&#13;
+            6: 'resolved',&#13;
+            7: 'closed',&#13;
+            8: 'canceled'&#13;
+        };&#13;
+&#13;
+        const status_map_odee_snow = {&#13;
+            'new': 1,&#13;
+            'in_progress': 2,&#13;
+            'on_hold': 3,&#13;
+            'resolved': 6,&#13;
+            'closed': 7,&#13;
+            'canceled': 8&#13;
+        };&#13;
+        if (id) {&#13;
+            g.correlation_id      = String(id);&#13;
+            g.correlation_display = 'Modius OpenData';&#13;
+        }&#13;
+        // Snapshot from the RESPONSE, never from what we sent: PUT echoes back&#13;
+        // the ticket's current values even for fields we omitted.&#13;
+        if (entry.statusId != null) {&#13;
+            g.u_od_status_id = entry.statusId;&#13;
+            g.u_od_state     = status_map_snow_odee[map.statusIdToState(entry.statusId)];&#13;
+        }&#13;
+        if (entry.urgencyLevelId != null) g.u_od_urgency_id = entry.urgencyLevelId;&#13;
+&#13;
+        // A POST always lands as New (1). If ServiceNow is already further&#13;
+        // along, queue the corrective PUT rather than declaring victory.&#13;
+        var needsCorrection = isCreate&#13;
+            &amp;&amp; !isNaN(parseInt(inc.state, 10))&#13;
+            &amp;&amp; parseInt(inc.state, 10) !== map.statusIdToState(entry.statusId);&#13;
+&#13;
+        g.u_sync_state   = needsCorrection ? UPDATE_PENDING : SYNCED;&#13;
+        g.u_direction    = 'outbound';&#13;
+        g.u_last_error   = '';&#13;
+        g.u_attempts     = 0;&#13;
+        g.u_last_attempt = new GlideDateTime();&#13;
+        g.active         = !(g.u_sync_state == SYNCED &amp;&amp; map.isTerminal(g.u_od_status_id));&#13;
+        g.update();&#13;
+    }&#13;
+&#13;
+    function markFailed(msg) {&#13;
+        g.u_sync_state   = FAILED;&#13;
+        g.u_last_error   = String(msg).substr(0, 4000);&#13;
+        g.u_attempts     = (parseInt(g.u_attempts, 10) || 0) + 1;&#13;
+        g.u_last_attempt = new GlideDateTime();&#13;
+        g.update();&#13;
+        // u_od_* and u_od_state are left alone — they still describe OpenData.&#13;
+    }&#13;
+&#13;
+    // OpenData rejects angle brackets in the client fields and stores the&#13;
+    // rest as free text, so strip markup rather than escaping it.&#13;
+    function scrub(v) {&#13;
+        return String(v || '').replace(/[&lt;&gt;]/g, '');&#13;
+    }&#13;
+&#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>559ec958938b07107156f9bfdd03d6cf</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>999e0d58938b07107156f9bfdd03d645</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=559ec958938b07107156f9bfdd03d6cf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>559ec958938b07107156f9bfdd03d6cf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>999e0d58938b07107156f9bfdd03d644</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>escrow_sys_id</field>
+        <id>559ec958938b07107156f9bfdd03d6cf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>9d9e0d58938b07107156f9bfdd03d647</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_559ec958938b07107156f9bfdd03d6cf</table>
+        <value>{{action.odee_ticket.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>559ec958938b07107156f9bfdd03d6cf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>d59e0d58938b07107156f9bfdd03d645</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_559ec958938b07107156f9bfdd03d6cf^id=559ec958938b07107156f9bfdd03d6cf"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=559ec958938b07107156f9bfdd03d6cf"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=559ec958938b07107156f9bfdd03d6cf"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=559ec958938b07107156f9bfdd03d6cf^sys_idNOT IN159ec958938b07107156f9bfdd03d6e3"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>escrow_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label>escrow_sys_id</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">559ec958938b07107156f9bfdd03d6cf</model>
+        <model_id>559ec958938b07107156f9bfdd03d6cf</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_559ec958938b07107156f9bfdd03d6cf</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>159ec958938b07107156f9bfdd03d6e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=559ec958938b07107156f9bfdd03d6cf^sys_idNOT IN159e0d58938b07107156f9bfdd03d608,519ec958938b07107156f9bfdd03d6f9,999e0d58938b07107156f9bfdd03d601,9d9e0d58938b07107156f9bfdd03d60e"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=457399d0-1b1a-4fce-961c-0ff4398636ef</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>debugpayload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>debugPayload</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">559ec958938b07107156f9bfdd03d6cf</model>
+        <model_id>559ec958938b07107156f9bfdd03d6cf</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_559ec958938b07107156f9bfdd03d6cf</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>159e0d58938b07107156f9bfdd03d608</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fb30c58c-acb1-4c58-9ac0-9d9947f3c411</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">559ec958938b07107156f9bfdd03d6cf</model>
+        <model_id>559ec958938b07107156f9bfdd03d6cf</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_559ec958938b07107156f9bfdd03d6cf</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>519ec958938b07107156f9bfdd03d6f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c7db754a-54f7-4a36-a4c4-e198d6180c31</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">559ec958938b07107156f9bfdd03d6cf</model>
+        <model_id>559ec958938b07107156f9bfdd03d6cf</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_559ec958938b07107156f9bfdd03d6cf</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>999e0d58938b07107156f9bfdd03d601</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c948171c-e80a-4569-8702-7b6d345b8fb5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>debugresponse</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>debugResponse</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">559ec958938b07107156f9bfdd03d6cf</model>
+        <model_id>559ec958938b07107156f9bfdd03d6cf</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_559ec958938b07107156f9bfdd03d6cf</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>9d9e0d58938b07107156f9bfdd03d60e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=559ec958938b07107156f9bfdd03d6cf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>message</element>
+        <help/>
+        <hint/>
+        <label>Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_559ec958938b07107156f9bfdd03d6cf</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>119e0d58938b07107156f9bfdd03d606</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>debugresponse</element>
+        <help/>
+        <hint/>
+        <label>debugResponse</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_559ec958938b07107156f9bfdd03d6cf</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>919e0d58938b07107156f9bfdd03d62c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_559ec958938b07107156f9bfdd03d6cf</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>959ec958938b07107156f9bfdd03d6ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>debugpayload</element>
+        <help/>
+        <hint/>
+        <label>debugPayload</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_559ec958938b07107156f9bfdd03d6cf</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>999e0d58938b07107156f9bfdd03d60c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=419ec958938b07107156f9bfdd03d698^sys_idNOT IN4d9ec958938b07107156f9bfdd03d69d"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ef1b381c-40ee-4195-b68d-59ad7e694061</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_2210852_odee_s_0_odee_ticket</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>odee_ticket</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>ODEE Ticket</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="ODEE Call Action">419ec958938b07107156f9bfdd03d698</model>
+        <model_id>419ec958938b07107156f9bfdd03d698</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_419ec958938b07107156f9bfdd03d698</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="x_2210852_odee_s_0_odee_ticket">x_2210852_odee_s_0_odee_ticket</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:27</sys_created_on>
+        <sys_id>4d9ec958938b07107156f9bfdd03d69d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4d9ec958938b07107156f9bfdd03d69d"/>
+    <sys_hub_action_output action="delete_multiple" query="model=419ec958938b07107156f9bfdd03d698^sys_idNOT INd59e0d58938b07107156f9bfdd03d64d,dd9e0d58938b07107156f9bfdd03d656"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=05894bd0-1a0d-47b6-892d-0534b6441aaf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="ODEE Call Action">419ec958938b07107156f9bfdd03d698</model>
+        <model_id>419ec958938b07107156f9bfdd03d698</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_419ec958938b07107156f9bfdd03d698</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>d59e0d58938b07107156f9bfdd03d64d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d59e0d58938b07107156f9bfdd03d64d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d59e0d58938b07107156f9bfdd03d64d"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=55a201fb-ed88-4680-a7b9-cd728a0045e0,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="ODEE Call Action">419ec958938b07107156f9bfdd03d698</model>
+        <model_id>419ec958938b07107156f9bfdd03d698</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_419ec958938b07107156f9bfdd03d698</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:29</sys_created_on>
+        <sys_id>dd9e0d58938b07107156f9bfdd03d656</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 20:49:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dd9e0d58938b07107156f9bfdd03d656"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=dd9e0d58938b07107156f9bfdd03d656"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=419ec958938b07107156f9bfdd03d698"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=419ec958938b07107156f9bfdd03d698^sys_idNOT IN219e0d58938b07107156f9bfdd03d677"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="ODEE Call Action">419ec958938b07107156f9bfdd03d698</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:29</sys_created_on>
+        <sys_id>219e0d58938b07107156f9bfdd03d677</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:29</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=219e0d58938b07107156f9bfdd03d677"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>odee_ticket</element>
+        <help/>
+        <hint/>
+        <label>ODEE Ticket</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_419ec958938b07107156f9bfdd03d698</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:28</sys_created_on>
+        <sys_id>899ec958938b07107156f9bfdd03d6c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_419ec958938b07107156f9bfdd03d698"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_419ec958938b07107156f9bfdd03d698</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:29</sys_created_on>
+        <sys_id>699e0d58938b07107156f9bfdd03d65f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_419ec958938b07107156f9bfdd03d698</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 16:42:29</sys_created_on>
+        <sys_id>d99e0d58938b07107156f9bfdd03d654</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ODEE SNOW Demo" source="x_2210852_odee_s_0">c70e0980938b83107156f9bfdd03d696</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ODEE SNOW Demo">c70e0980938b83107156f9bfdd03d696</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:42:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_419ec958938b07107156f9bfdd03d698"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>17269e4493c3c3107156f9bfdd03d6c0</sys_id>
+        <latest_snapshot>419ec958938b07107156f9bfdd03d698</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>
